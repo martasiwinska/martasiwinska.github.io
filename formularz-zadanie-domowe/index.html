@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/mar.siwinska@gmail.com" method="post">
+        <label for="imie">Imię:</label><br/>
+        <input type="text" name="imie" id="imie"><br/><br/>
+
+        <label for="nazwisko">Nazwisko:</label><br/>
+        <input type="text" name="nazwisko" id="nazwisko"><br/><br/>
+
+        <label for="email">E-mail:</label><br/>
+        <input type="text" name="email" id="email"><br/><br/>
+
+        <label for="telefon">Numer telefonu:</label> <br/>
+        <input type="text" name="telefon" id="telefon"><br/>
+
+        <p>
+            Miasto:
+            <select name="miasto">
+  <option id="warszawa" value="warszawa">Warszawa</option>
+  <option id="gdansk" value="gdansk">Gdańsk</option>
+  <option id="krakow" value="krakow">Kraków</option>
+          </select>
+        </p>
+        <p>
+            Płeć:
+            <br/>
+            <input type="radio" name="plec" id="kobieta" value="kobieta" />
+            <label for="kobieta">kobieta</label><br/>
+            <input type="radio" name="plec" id="mezczyzna" value="mezczyzna" />
+            <label for="mezczyzna">mężczyzna</label><br/>
+            <input type="radio" name="plec" id="rozna" value="rozna" />
+            <label for="rozna">różna</label><br/><br/>
+        </p>
+
+        <p>
+            Zgoda na przetwarzanie danych osobowych. Zaznacz poniżej odpowiednie pole: <br/>
+            <input type="checkbox" name="przetwarzanie-danych-osobowych" id="kontakt" value="kontakt" />
+            <label for="kontakt">kontakt w celu obsługi bieżącego zamówienia</label><br/>
+
+            <input type="checkbox" name="przetwarzanie-danych-osobowych" id="newsletter" value="newsletter" />
+            <label for="newsletter">otrzymywanie newslettera</label><br/>
+
+            <input type="checkbox" name="przetwarzanie-danych-osobowych" id="wydarzenia-specjalne" value="wydarzenia-specjalne" />
+            <label for="wydarzenia-specjalne">otrzymywanie informacji o wydarzeniach specjalnych </label><br/><br/>
+        </p>
+
+        <label for="wiadomosc">Wiadomość:</label><br/>
+        <textarea name="wiadomosc" id="wiadomosc" rows="10" cols="30">
+</textarea> <br/> <br/>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <form action="https://formspree.io/mar.siwinska@gmail.com" method="post">
+
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie">
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko">
+        <label for="email">E-mail:</label>
+        <input type="text" name="email" id="email">
+        <label for="telefon">Numer telefonu:</label>
+        <input type="text" name="telefon" id="telefon"><br/> Miasto:
+
+        <br/>
+        <select name="miasto">
+            <option id="warszawa" value="warszawa">Warszawa</option>
+            <option id="gdansk" value="gdansk">Gdańsk</option>
+            <option id="krakow" value="krakow">Kraków</option>
+            </select><br/><br/>
+             
+        <p>Płeć:</p>
+        <input type="radio" name="plec" id="kobieta" value="kobieta" />
+        <label for="kobieta">kobieta</label>
+        
+        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna" />
+        <label for="mezczyzna">mężczyzna</label>
+        
+        <input type="radio" name="plec" id="rozna" value="rozna" />
+        <label for="rozna">różna</label><br/> 
+        
+        <p>Zgoda na przetwarzanie danych osobowych:<br/></p>
+        <input type="checkbox" name="przetwarzanie-danych-osobowych" id="kontakt" value="kontakt" />
+        <label for="kontakt">kontakt w celu obsługi bieżącego zamówienia</label>
+        <input type="checkbox" name="przetwarzanie-danych-osobowych" id="newsletter" value="newsletter" />
+        <label for="newsletter">otrzymywanie newslettera</label>
+        <input type="checkbox" name="przetwarzanie-danych-osobowych" id="wydarzenia-specjalne" value="wydarzenia-specjalne" />
+        <label for="wydarzenia-specjalne">otrzymywanie informacji o wydarzeniach specjalnych </label><br/><br/>
+
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea name="wiadomosc" id="wiadomosc" rows="10" cols="30"></textarea> <br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+
+</html>

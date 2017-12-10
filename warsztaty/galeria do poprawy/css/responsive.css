@@ -1,0 +1,27 @@
+#gallery {
+    width: 100%;
+}
+
+@media all and (max-width:480px) {
+    #gallery {
+        width: 100%;
+    }
+}
+
+@media all and (min-width:481px) and (max-width:768px) {
+    figure {
+    width: 75%;
+    }
+}
+@media all and (min-width:769px) and (max-width:992px) {
+    figure {
+    width: 40%;
+    }
+}
+
+@media all and (min-width:993px) {
+    figure {
+    width: 30%;
+    }
+}
+

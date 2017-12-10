@@ -2,26 +2,37 @@
     width: 100%;
 }
 
-@media all and (max-width:480px) {
-    #gallery {
+@media screen and (max-width: 480px) {
+    figure {
         width: 100%;
     }
 }
 
-@media all and (min-width:481px) and (max-width:768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     figure {
-    width: 75%;
+        width: 100%;
     }
 }
-@media all and (min-width:769px) and (max-width:992px) {
+    
+@media screen and (min-width: 769px) and (max-width: 992px) {
     figure {
-    width: 40%;
+        width: 49%;
+    }
+}
+    
+/*
+        width: 50%;
+        #gallery: font-size: 0;
+*/
+        
+
+
+@media screen and (min-width: 993px) {
+    figure {
+    width: 33%;
     }
 }
 
-@media all and (min-width:993px) {
-    figure {
-    width: 30%;
-    }
-}
+
+
 

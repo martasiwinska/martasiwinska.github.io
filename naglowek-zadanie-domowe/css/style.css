@@ -1,0 +1,45 @@
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+
+body {
+    font-family: "Verdana";
+    margin: 0;
+    padding: 0;
+}
+
+.float {
+    text-align: left;
+    color: white;
+/*    vertical-align: middle;*/
+}
+
+header#main-header {
+    background-image: url(../img/man-1.jpg);
+    height: 100vw;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+/*
+#background-foto1 {
+    background-image: url(../img/man-1.jpg);
+    width: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+*/
+
+/*
+- Więcej niż 1170px
+- Pomiędzy 992px - 1170px
+- Mniej niż 992px*/
+
+/*
+- powyżej 1170px - tekst nagłówkowy wyrównany horyzontalnie do lewej i wertykalnie do środka - obrazek na pełną wysokość okna przeglądarki
+- pomiędzy 992px a 1170px - tekst nagłówkowy wyrównany do prawego górnego rogu - obrazek na 70 procent wysokość okna przeglądarki
+- poniżej 992px - tekst pod obrazkiem - obrazek na połowę wysokość okna przeglądarki
+*/

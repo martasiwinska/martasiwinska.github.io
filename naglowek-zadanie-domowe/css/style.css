@@ -1,37 +1,32 @@
-/*
-* {
-    box-sizing: border-box;
-}
-*/
-
-
 body {
     font-family: "Verdana";
     margin: 0;
     padding: 0;
+    overflow-y:hidden;
 }
 
-.float {
-    text-align: left;
+.text {
+    position: absolute;
+    left: 5%;
     color: white;
-/*    vertical-align: middle;*/
 }
 
-header#main-header {
-    background-image: url(../img/man-1.jpg);
-    height: 100vw;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
+.h1 {
+    top: 55%;
 }
-/*
-#background-foto1 {
+
+.h2 {
+    top: 50%;
+}
+header > div#background-foto {
     background-image: url(../img/man-1.jpg);
-    width: 100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
 }
-*/
+
 
 /*
 - Więcej niż 1170px

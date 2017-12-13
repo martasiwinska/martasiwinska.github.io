@@ -2,7 +2,7 @@ body {
     font-family: "Verdana";
     margin: 0;
     padding: 0;
-    overflow-y:hidden;
+    overflow-y: hidden;
 }
 
 .text {
@@ -18,23 +18,11 @@ body {
 .h2 {
     top: 50%;
 }
+
 header > div#background-foto {
     background-image: url(../img/man-1.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
 }
-
-
-/*
-- Więcej niż 1170px
-- Pomiędzy 992px - 1170px
-- Mniej niż 992px*/
-
-/*
-- powyżej 1170px - tekst nagłówkowy wyrównany horyzontalnie do lewej i wertykalnie do środka - obrazek na pełną wysokość okna przeglądarki
-- pomiędzy 992px a 1170px - tekst nagłówkowy wyrównany do prawego górnego rogu - obrazek na 70 procent wysokość okna przeglądarki
-- poniżej 992px - tekst pod obrazkiem - obrazek na połowę wysokość okna przeglądarki
-*/

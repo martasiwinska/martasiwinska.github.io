@@ -1,46 +1,45 @@
-
-@media screen and (min-width:1170px) { 
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-        
-    }
-
-
-@media screen and (min-width: 993px) and (max-width: 1170px){
+@media screen and (max-width:992px) {
     header > div#background-foto {
-    background-image: url(../img/man-2.jpg);
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        background-image: url(../img/man-1.jpg);
+        height: 50vh;
     }
-    
+
     .text {
-    color: white;
+        color: black;
+        position: absolute;
     }
-    
+
     .h1 {
-    top: 10%;
-}
+        top: 57%;
+        left: 20%;
+    }
 
     .h2 {
-    top: 5%;
+        top: 50%;
+        left: 37%;
+    }
 }
 
-@media screen and (max-width: 992px) {
-    body {
-        overflow-y: auto;
-    }
-    
+@media screen and (min-width:993px) and (max-width:1170px) {
     header > div#background-foto {
-    height: 20%;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+        background-image: url(../img/man-2.jpg);
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
-    
 
+    .text {
+        left: 55%;
+    }
 
+    .h1 {
+        top: 12%;
+    }
+
+    .h2 {
+        top: 6%;
+    }
+
+}
 

@@ -7,16 +7,17 @@
     .text {
         color: black;
         position: absolute;
+        text-align: center;
     }
 
     .h1 {
         top: 57%;
-        left: 20%;
+        left: 40%;
     }
 
     .h2 {
         top: 50%;
-        left: 37%;
+        left: 50%;
     }
 }
 

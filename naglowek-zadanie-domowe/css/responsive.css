@@ -9,6 +9,7 @@
         display: inline-block;
         position: absolute;
         text-align: center;
+        left: 0;
         width: 100%;
     }
     

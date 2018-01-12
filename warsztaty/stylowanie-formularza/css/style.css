@@ -46,3 +46,13 @@ form input[type="submit"] {
     text-transform: uppercase;
     cursor: pointer;
 }
+
+footer {
+    background-color: #142634;
+    padding: 0 80px;
+}
+
+footer > #copyright > p {
+    margin: 0;
+    color: #fff;
+}

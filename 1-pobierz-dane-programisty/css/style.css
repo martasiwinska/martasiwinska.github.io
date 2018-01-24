@@ -1,0 +1,14 @@
+#dane-programisty {
+	background-color: gainsboro;
+	font-family: calibri sans-serif;
+	font-size: 25px;	
+}
+
+button {
+	width: 200px;
+	height: 100px;
+	background-color: blueviolet;
+	color: white;
+	font-family: calibri sans-serif;
+	font-size: 20px;
+}

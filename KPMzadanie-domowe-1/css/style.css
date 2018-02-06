@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+}
+
+#main-header {
+  background-image: url(../img/tlo.jpg);
+  background-position: center;;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+
+#nav-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+#navigation {
+  display: flex;
+}
+
+.list-item {
+  padding-left: 20px;
+}
+
+figure#logo {
+  background-image: url(../img/logo_thinslices.png);
+  background-position: center;
+  background-size: cover;
+  height: 50px;
+  width: 250px;
+}
+
+h1 {
+  padding-top: 10%;
+  text-align: center;
+  font-family: 'Glegoo', serif;
+  font-size: 2.5rem;
+}
+
+.about-container {
+  width: 33.3%;
+  float: left;
+  height: 160px;
+  color: black;
+  padding: 20px;
+  background-color: #dfdfdf;
+}
+
+p#second {
+  padding-top: 30px;
+}
+
+ #about-icon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background-color:#1E90FF;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+}

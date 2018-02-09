@@ -1,0 +1,9 @@
+@mixin float {
+	width: 50%;
+	float: left;
+}
+
+@mixin foto-position {
+	background-position: center;
+	background-size: cover;
+}

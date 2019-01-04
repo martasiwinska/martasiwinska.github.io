@@ -1,0 +1,130 @@
+body {
+    /*font-size: 14px !important;*/
+    font-family: Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-color-one,
+#nav-color-two {
+    color: #001A7A;
+    font-size: 1.2rem;
+}
+
+#nav-color-one:hover,
+#nav-color-two:hover {
+    color: #0EC8EE;
+}
+
+img#logo-nav {
+    max-width: 40%;
+    padding: 0 2% 2% 0;
+    float: left;
+    display: block;
+    animation: scale 1.5s ease-out;
+}
+
+#header-image {
+    height: 80vh;
+    background-image: url(img/tree.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+}
+
+#landing-main {
+    color: #212529;
+    padding: 1em;
+    text-align: justify;
+}
+
+#landing-main > p > span {
+    font-weight: 550;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.icon-container {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-color: #001A7A;
+    display: inline-block;
+    text-align: center;
+    line-height: 2.5rem;
+    margin: 0.31rem;
+}
+
+.icon-container:hover {
+    background-color: #0EC8EE;    
+}
+
+.icon-container a {
+    color: white;
+    font-size: 0.87rem;
+}
+
+footer.footer-style {
+    text-align: center;
+    color: #001A7A;
+    width: inherit;
+}
+
+.footer-content {
+    width: 33%;
+    display: inline-block;
+    color: #212529;
+    vertical-align: bottom;
+    color: #001A7A;
+    margin-top: 2.19rem;
+}
+
+.footer-content p {
+    margin-bottom: 0;
+    color: #212529;
+}
+
+p.neuron-data {
+    text-align: left;
+}
+
+p.neuron-data span {
+    font-weight: 550;
+}
+
+img#footer-logo {
+    max-width: 22%;
+    float: right;
+}
+
+div#copyright {
+    height: 1.75rem;
+    background-color: #001A7A;
+    margin-top: 0.94rem;
+    margin-bottom: 0.5rem;
+}
+
+div#copyright>p {
+    color:white;
+    margin: 0;
+    padding: 0.2rem;
+}
+
+
+@media all and (max-width: 1200px) {
+    .footer-content {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    p.neuron-data {
+        text-align: center;
+        float: none;
+        margin-top: 2%;
+    }
+    img#footer-logo {
+        float: none;
+    }
+}

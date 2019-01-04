@@ -1,0 +1,187 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F9FA;
+    color: #1F1D1C;
+    margin: 0;
+}
+
+#main-nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+#phone-contact {
+    width: 50%;
+    justify-content: flex-start;
+    padding: 0.625rem;
+}
+
+#phone-contact > a:hover {
+    color: #EE3816;
+}
+
+.icon-color {
+    color: #EE3816;
+    padding: 0.3125rem;
+}
+
+#phone-contact > a {
+text-decoration: none;
+color: #1F1D1C;
+}
+
+#navbar-style {
+    width: 50%;
+    justify-content: flex-end;
+}
+
+#nav-link-style1,
+#nav-link-style2,
+#nav-link-style3 {
+    color: #1F1D1C;
+}
+
+#nav-link-style1:hover,
+#nav-link-style2:hover,
+#nav-link-style3:hover {
+    color: #EE3816;
+}
+
+#main-header {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/jumper-cables-926308_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 31.25rem;
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-header {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 1.875rem;
+}
+
+.section-header h2 {
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: 12.5rem; 
+    justify-content: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+#services {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
+
+#icons-container {
+    padding-left: 9.375rem;
+    padding-right: 9.375rem;
+}
+
+.icon {
+height: 9.375rem;
+font-size: 5rem;
+color: #332D2D;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.icon-text {
+    color:  #EE3816;
+    text-align: center;
+    height: 3.75rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    
+}
+
+#adress-content {
+    align-items: center;
+    text-align: center;
+}
+
+.adress-content {
+    background-color: #EDEDED;
+    border-radius: 0.625rem;
+    padding: 0.625rem;
+    align-items: center;
+    text-align: center;
+}
+
+#adress-content1 {
+    margin-bottom: 1.25rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+#contact {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/keys-1380134_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 31.25rem;
+    padding: 1.875rem;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact .contact-form .contact-form-column {
+	height: 13.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+#contact input,
+#contact textarea {
+	padding: 0.625rem;
+	border-radius: 0.3125rem;
+}
+
+#contact input:not([type='submit']),
+#contact textarea {
+	border: 0px solid;
+}
+
+#contact textarea {
+	height: 100%;
+}
+
+#contact input[type='submit'] {
+	background-color: #EE3816;
+	border: 0.0625rem solid #EE3816;
+	color: #fff;
+	transition: all .3s;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+
+#contact input[type='submit']:hover {
+	background-color: #fff;
+	border: 0.0625rem solid #EE3816;
+	color: #EE3816;
+}
+
+#footer-style {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+    margin: 0;
+}

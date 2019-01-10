@@ -1,4 +1,4 @@
-formspree.js
+
 var $contactForm = $('#form-conact');
 $contactForm.submit(function(e) {
 	e.preventDefault();

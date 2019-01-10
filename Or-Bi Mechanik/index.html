@@ -9,7 +9,6 @@
     <title>Or-Bi Mechanik</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -52,7 +51,7 @@
             <div class="row">
                 <div class="section-header">
                     <h2>OFERTA</h2>
-                    <p> Jesteśmy nowym puntem mechaniki samochodowej we Włocławku. Świadczymy kompleksowe usługi w zakresie diagnostyki komputerowej, mechaniki i wulkanizacji. Prowadzimy stację demontażu pojazdu, a w trosce o Państwa pełną mobilność proponujemy także auta zastępcze.
+                    <p> Jesteśmy nowym puntem mechaniki samochodowej we Włocławku. Świadczymy kompleksowe usługi w zakresie diagnostyki komputerowej, mechaniki i wulkanizacji, a w trosce o Państwa mobilność dysponujemy autem zastępczym. Współpracujemy także z warsztatem parterskim, który prowadzi stację demontażu pojazdu. Wszelkie pytania w tym zakresie mogą Państwo kierować bezpośrednio do nas.
                         Zapraszamy do kontaktu telefonicznego, mailowego oraz poprzez formularz kontaktowy.</p>
                 </div>
             </div>
@@ -142,9 +141,9 @@
                         Dariusz Orliński, Piotr Biernacki</span><br>
                         Aleja Jana Pawła II 71<br>
                         87-800 Włocławek<br>
-                        <a href="tel:+48507070285"></a><i class="fas fa-phone-volume icon-color"></i>+48 507 070 285 
-                        <a href="tel:+48500136155"></a><i class="fas fa-phone-volume icon-color"></i>+48 500 136 155<br>
-                        <i class="fas fa-envelope icon-color"></i> kontakt@or-bi-mechanik.pl<br></p>
+                        <a href="tel:+48507070285"><i class="fas fa-phone-volume icon-color"></i>+48 507 070 285</a>
+                        <a href="tel:+48500136155"><i class="fas fa-phone-volume icon-color"></i>+48 500 136 155<br></a>
+                        <a href="mailto:kontakt@or-bi-mechanik.pl"><i class="fas fa-envelope icon-color"></i> kontakt@or-bi-mechanik.pl<br></a></p>
                     </div>
                     <div class="adress-content">
                         <p><span>GODZINY PRACY:</span><br>
@@ -174,7 +173,8 @@
                 </div>
             </div>
 
-            <form action="https://formspree.io/mar.siwinska@gmail.com" method="POST" class="row contact-form">
+            <form id="form-contact" action="https://formspree.io/kontakt@or-bi-mechanik.pl" method="POST" class="row contact-form">
+
                 <div class="col-md-6 contact-form-column">
                     <input type="text" name="imie i nazwisko" id="imie i nazwisko" placeholder="imię i nazwisko"><br>
                     <input type="email" name="email" id="email" placeholder="adres e-mail"><br>
@@ -184,7 +184,11 @@
                 <div class="col-md-6 contact-form-column">
                     <textarea name="wiadomosc" id="wiadomosc" placeholder="wiadomość"></textarea>
                 </div>
-                    <div class="col-12 text-center"><input type="submit" value="Wyślij wiadomość"></div>
+                    
+                <div class="col-12 text-center">
+                    <input type="submit" value="Wyślij wiadomość">
+                </div>
+
             </form>
         </div>
     </section>
@@ -192,13 +196,22 @@
 <!-- footer -->
 
     <footer>
-        <div> 
-            <p id="footer-style">Copyright 2019 © Niebieska Panda</p>
-        </div>
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <p id="copyright-style">Copyright © 2019 Or-Bi</p>
+                 </div>
+                 <div class="col-md-2 col-sm-12">
+                    <a href="index.html"><p class="privacy-style">Strona główna</p></a>
+                 </div>
+                 <div class="col-md-2 col-sm-12">
+                    <a href="policy-terms.html"><p class="privacy-style">Polityka Prywatności</p></a>
+                 </div>
+             </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-dark-color:#0e0e0e;
+$secondary-dark-color:#151515;
+$primary-light-color:#dadada;
+$text-color: #393939;
+$logo-dark-color:#0e196e;
+$logo-light-color: #2a80f8;
+
+@mixin section-img-style {
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+}
+
+@mixin nav2-row-style{
+    height: 100%;
+    text-align: center;
+    padding: 7px 0px 14px 0px;
+}
+
+@keyframes rotate-img-left {
+    0% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-img-right {
+    0% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes header-animate {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 25% 100%, 0 70%);
+    }
+    100% {
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+ }
+}
+// }
+
+// #0e0e0e - górna nawigacja 1
+// #151515 - górna nawigacja 2
+// #2a80f8 - dolna belka w górnej navigacji 2
+// #0e196e - nagłówki, przyciski "rozwiń", strzałki
+// #dadada - teksty i ikony w nawigacji
+// #393939 - główny tekst na stronie i przyciski pod nim
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 13px;
+}
+
+
+// nav1
+
+.main-nav1 {
+    background-color: $primary-dark-color;
+    height: 50px;
+
+    .nav-link-style {
+        i {
+        margin: 15px;
+        }
+    }
+    
+    a {
+    color: $primary-light-color;
+    }
+
+    .search-input {
+        background-image: linear-gradient(to right bottom,
+        rgba($secondary-dark-color, 1),
+        rgba($secondary-dark-color, 1));
+        // url(../img/LUPA.png);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        border-radius: 0.3125rem;
+        background-position: left;
+        border: none;
+        width: 100px;
+
+        &:hover,
+        &:focus {
+            background-image: linear-gradient(to right bottom,
+            rgba($primary-light-color, 1),
+            rgba($primary-light-color, 1)),
+            url(../img/loopka.png);
+            border: none;
+            width: 100px;
+        }
+    }
+}
+
+
+
+
+
+
+// nav2
+
+.nav2 {
+    background-color: $secondary-dark-color;
+    height: 50px;
+
+    .nav2-container-style {
+        @include nav2-row-style;
+
+        .nav2-row-style {
+            @include nav2-row-style;
+
+            .border-style {
+                height: 36px;
+
+                &:hover {
+                  border-bottom: solid 2px $logo-light-color;
+                }  
+             }
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $primary-light-color;
+    }
+}
+
+
+// header
+
+#main-header {
+    background-image: linear-gradient(to right bottom,
+    rgba($logo-dark-color, 0.4),
+    rgba($logo-light-color, 0.4)),
+    url(../img/header-foto.jpg);
+	background-size: cover;
+	background-position: center;
+    height: 84.5vh;
+	color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 25% 100%, 0 70%);
+
+
+    .header-caption {
+        padding-left: 100px;
+    
+        img {
+            height: 130px;
+            margin: 50px 0 50px 0;
+        }
+
+        .header-text-container {
+            width: 35%;
+
+            h1 {
+                font-size: 3.5em;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+// section
+
+.section-container {
+    padding: 100px 0 100px 0;
+    width: 100%;
+    overflow-x: hidden;
+
+    .section-row-style {
+        padding-bottom: 50px;
+        margin: 0;   
+    }
+
+    img {
+        @include section-img-style;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0, 0.50) 
+    }
+
+    .section-img-left {
+        // transform: rotate(15deg);
+        margin-left: -50px;
+    }
+
+    .section-img-right {
+        // transform: rotate(-15deg);
+        margin-right: -50px;
+    }
+
+    .animate-left {
+        animation: rotate-img-left 100s linear infinite;
+    }
+
+    .animate-right {
+        animation: rotate-img-right 100s linear infinite reverse;
+    }
+
+    .article-text {
+        width: 60%;
+        height: 400px;
+        padding: 120px 200px 120px 200px;
+    
+        h4 {
+            margin-bottom: 1.5rem;
+            color:$logo-dark-color;
+        }
+     
+        p {
+            color: $text-color;
+        }
+    }
+}
+
+ 
+// footer
+
+footer {
+
+    img#footer-logo {
+        max-width: 22%;
+        margin-bottom: 2.5rem;
+    }
+
+    .footer-link {
+        padding-right: 0.85rem !important;
+        padding-left: 0.85rem !important;
+        color: $text-color;
+
+        &:hover,
+        &:focus {
+            color: $text-color;
+            text-decoration-color: $logo-light-color;
+        }
+    }
+
+    .footer-link-1 {
+        color: $text-color;
+
+        &:hover,
+        &:focus {
+            color: $text-color;
+            text-decoration-color: $logo-light-color;
+        }
+    }
+}
+
+div#copyright {
+    height: 1.75rem;
+    margin-top: 0.94rem;
+    margin-bottom: 0.5rem;
+
+    p {
+        color: $primary-dark-color;
+        padding: 0.2rem;
+    }
+}
+
+#scroll-button {
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: solid 1px $logo-light-color;
+    border-radius: 100%;
+    // background-color: #0e19;
+    text-align: center;
+
+    i {
+        color: $logo-light-color;
+        font-size: 12px;   
+    }
+};

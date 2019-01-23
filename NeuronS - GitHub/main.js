@@ -1,3 +1,12 @@
+$(document).magicArrow({
+    primarySelector:    '#scroll-top',
+    secondarySelector:  '#scroll-down',
+    animationDuration:  500,
+    animationType:      'swing',
+    animatePrimary:     true,
+    animateSecondary:   true
+});
+
 $(document).ready(function() {
 
 // SCROLL-ICON

@@ -70,6 +70,7 @@ body {
 .margin-top-style {
     margin-top: 4px;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: $primary-light-color;
     
@@ -87,33 +88,8 @@ body {
         margin: 15px;
         font-size: 13px;
         }
-
-    }
-
-    .search-input {
-        background-image: linear-gradient(to right bottom,
-        rgba($secondary-dark-color, 1),
-        rgba($secondary-dark-color, 1));
-        // url(../img/LUPA.png);
-        // background-size: contain;
-        // background-repeat: no-repeat;
-        border-radius: 0.3125rem;
-        background-position: left;
-        border: none;
-        width: 100px;
-
-        &:hover,
-        &:focus {
-            background-image: linear-gradient(to right bottom,
-            rgba($primary-light-color, 1),
-            rgba($primary-light-color, 1)),
-            url(../img/loopka.png);
-            border: none;
-            width: 100px;
-        }
     }
 }
-
 
 // nav2
 

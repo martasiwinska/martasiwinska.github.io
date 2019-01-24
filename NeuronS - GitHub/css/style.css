@@ -39,16 +39,6 @@ body {
   .main-nav1 .nav-link-style i {
     margin: 15px;
     font-size: 13px; }
-  .main-nav1 .search-input {
-    background-image: linear-gradient(to right bottom, #151515, #151515);
-    border-radius: 0.3125rem;
-    background-position: left;
-    border: none;
-    width: 100px; }
-    .main-nav1 .search-input:hover, .main-nav1 .search-input:focus {
-      background-image: linear-gradient(to right bottom, #dadada, #dadada), url(../img/loopka.png);
-      border: none;
-      width: 100px; }
 
 .navbar-expand-sm .navbar-nav .nav-link {
   padding-right: 1.25rem !important;

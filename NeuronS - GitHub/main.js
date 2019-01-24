@@ -7,6 +7,11 @@ $(document).magicArrow({
     animateSecondary:   true
 });
 
+$('#magicSearch').magicSearch({
+    primaryMenuSelector: 'nav.nav2',
+    hideableElementsSelector: 'a'
+});
+
 $(document).ready(function() {
 
 // SCROLL-ICON

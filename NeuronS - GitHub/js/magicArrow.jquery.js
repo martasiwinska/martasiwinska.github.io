@@ -40,6 +40,21 @@
         }
     };
 
+    var onScroll = function(e) {
+        var currentOffset = $(this).scrollTop();
+        if(currentOffset <= settings.hideOffsetTop) {
+            $(settings.primarySelector).css('visibility', 'hidden');
+        } else {
+            $(settings.primarySelector).css('visibility', 'visible');
+        }
+
+        if($(window).scrollTop() + $(window).height() > $(document).height() - settings.hideOffsetBottom) {
+            $(settings.secondarySelector).css('visibility', 'hidden');
+        } else {
+            $(settings.secondarySelector).css('visibility', 'visible');
+        }
+    };
+
     var defaults = {
         primarySelector:    null,
         secondarySelector:  null,
@@ -48,7 +63,9 @@
         animationDuration:  500,
         animationType:      'swing',        // swing || linear, more with jquery-ui
         animatePrimary:     false,
-        animateSecondary:   false
+        animateSecondary:   false,
+        hideOffsetTop:      50,
+        hideOffsetBottom:   50
     };
 
     var validate = function(config) {
@@ -74,5 +91,6 @@
 
         $(this).on('click', settings.primarySelector, settings.primaryCallback);
         $(this).on('click', settings.secondarySelector, settings.secondaryCallback);
+        $(document).on('scroll', onScroll);
     };
 }(jQuery));

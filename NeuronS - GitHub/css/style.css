@@ -25,16 +25,20 @@ body {
   font-family: 'Muli', sans-serif;
   font-size: 13px; }
 
+.margin-top-style {
+  margin-top: 4px; }
+
 .navbar-dark .navbar-nav .nav-link {
   color: #dadada; }
+  .navbar-dark .navbar-nav .nav-link i {
+    font-size: 13px; }
 
 .main-nav1 {
   background-color: #0e0e0e;
   height: 50px; }
   .main-nav1 .nav-link-style i {
-    margin: 15px; }
-  .main-nav1 a {
-    color: #dadada; }
+    margin: 15px;
+    font-size: 13px; }
   .main-nav1 .search-input {
     background-image: linear-gradient(to right bottom, #151515, #151515);
     border-radius: 0.3125rem;
@@ -46,22 +50,34 @@ body {
       border: none;
       width: 100px; }
 
-.nav2 {
+.navbar-expand-sm .navbar-nav .nav-link {
+  padding-right: 1.25rem !important;
+  padding-left: 1.25rem !important;
+  padding-bottom: 1rem;
+  color: #dedede;
+  border-bottom: solid 2px #151515; }
+  .navbar-expand-sm .navbar-nav .nav-link:hover {
+    border-bottom: solid 2px #2a80f8; }
+
+img#logo-main-nav {
+  width: 30px;
+  margin-right: 15px;
+  margin-top: 0; }
+
+#nav2 {
   background-color: #151515;
-  height: 50px; }
-  .nav2 .nav2-container-style {
+  padding-bottom: 0; }
+  #nav2 .nav2-container-style {
     height: 100%;
     text-align: center;
     padding: 7px 0px 14px 0px; }
-    .nav2 .nav2-container-style .nav2-row-style {
+    #nav2 .nav2-container-style .nav2-row-style {
       height: 100%;
       text-align: center;
       padding: 7px 0px 14px 0px; }
-      .nav2 .nav2-container-style .nav2-row-style .border-style {
-        height: 36px; }
-        .nav2 .nav2-container-style .nav2-row-style .border-style:hover {
-          border-bottom: solid 2px #2a80f8; }
-  .nav2 a {
+      #nav2 .nav2-container-style .nav2-row-style .border-style:hover {
+        border-bottom: solid 2px #2a80f8; }
+  #nav2 a {
     text-decoration: none;
     color: #dadada; }
 

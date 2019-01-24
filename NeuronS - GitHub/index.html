@@ -19,33 +19,31 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark main-nav1">
-            <ul class="navbar-nav to-hide">
-                <li>
-                    <a class="nav-link" href="#"><i class="icon-rss"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#"><i class="icon-facebook"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#"><i class="icon-twitter"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#"><i class="icon-instagram"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#"><i class="icon-youtube-play"></i></a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#"><i class="icon-linkedin-squared"></i></a>
-                </li>
-            </ul>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse nav-center-block" id="navbarText">
-                <ul class="navbar-nav ml-auto w-80 justify-content-center">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="col-md-2 navbar-nav justify-content-start to-hide">
+                    <li>
+                        <a class="nav-link px-2" href="#"><i class="icon-rss"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-2" href="#"><i class="icon-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-2" href="#"><i class="icon-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-2" href="#"><i class="icon-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-2" href="#"><i class="icon-youtube-play"></i></a>
+                    </li>
+                    <li>
+                        <a class="nav-link px-2" href="#"><i class="icon-linkedin-squared"></i></a>
+                    </li>
+                </ul>
+                <ul class="col-md-8 navbar-nav justify-content-center">
                     <li class="nav-item nav-link-style">
                         <a class="nav-link" href="#">Sklep<i class="icon-basket"></i></a>
                     </li>
@@ -61,23 +59,26 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto justify-content-end">
-                    <li class="nav-item">
+                <ul class="col-md-2 navbar-nav justify-content-end" id="right-itemlist">
+                    <li class="nav-item hide-when-search">
                         <a class="nav-link" href="#">O projekcie</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hide-when-search">
                         <a class="nav-link" href="#">PL</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hide-when-search">
                         <a class="nav-link" href="#">Zaloguj</a>
+                    </li>
+                    <li class="nav-item" style="position:absolute; right: 10px; top: 10px; z-index: 10000;">
+                        <input type="text" name="search" class="search-input d-none" style="border: none;">
                     </li>
                 </ul>
             </div>
         </nav>
+
         <nav class="nav2">
             <div class="container nav2-container-style">
                 <div class="row nav2-row-style">
-                    <input type="text" name="search" class="search-input d-none" style="border: none;">
                     <div class="col-lg-2 col-sm-6 border-style">
                         <a href="#">NeuroN Foundation</a>
                     </div>

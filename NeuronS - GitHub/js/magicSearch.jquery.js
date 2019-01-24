@@ -30,9 +30,8 @@
     };
 
     var hidePrimaryMenu = function() {
-        $(settings.primaryMenuSelector)
-            .find(settings.hideableElementsSelector)
-            .addClass("animated " + settings.hideAnimation);
+        $hideableElements = $(settings.primaryMenuSelector).find(settings.hideableElementsSelector);
+        $hideableElements.addClass("animated " + settings.hideAnimation);
 
         hidden = true;
     };
@@ -47,10 +46,7 @@
 
     var showSearchbar = function() {
         var $searchInput    = $(settings.searchInputSelector);
-        var isInvisible     = $searchInput.hasClass("d-none");
-        if(isInvisible) {
-            $searchInput.removeClass("d-none");
-        }
+        $searchInput.removeClass("d-none");
         $searchInput.addClass("animated stretch");
     };
 
@@ -60,6 +56,7 @@
         if(!isInvisible) {
             $searchInput.removeClass("stretch");
             $searchInput.addClass("squash");
+            $searchInput.addClass("d-none");
         }
     };
 

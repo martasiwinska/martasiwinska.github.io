@@ -3568,7 +3568,9 @@
 
 @keyframes squash {
   from { width: 100%; }
-  to  { width: 0%; }
+  to  {
+    width: 0%;
+  }
 }
 
 .squash {

@@ -8,8 +8,8 @@ $(document).magicArrow({
 });
 
 $('#magicSearch').magicSearch({
-    primaryMenuSelector: 'nav.nav2',
-    hideableElementsSelector: 'a'
+    primaryMenuSelector: '#right-itemlist',
+    hideableElementsSelector: '.hide-when-search'
 });
 
 $(document).ready(function() {

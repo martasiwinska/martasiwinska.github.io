@@ -40,6 +40,19 @@ body {
     margin: 15px;
     font-size: 13px; }
 
+.dropdown-menu {
+  min-width: 1rem;
+  background-color: #0e0e0e;
+  color: #dadada;
+  font-size: 13px;
+  font-family: 'Muli', sans-serif;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border: 0; }
+
+.dropdown-menu li:hover {
+  background-color: #151515; }
+
 .navbar-expand-sm .navbar-nav .nav-link {
   padding-right: 1.25rem !important;
   padding-left: 1.25rem !important;
@@ -157,13 +170,3 @@ div#copyright {
   #scroll-button i {
     color: #2a80f8;
     font-size: 12px; }
-
-@media all and (max-width: 992px) {
-  .to-hide {
-    visibility: hidden; } }
-
-@media all and (max-width: 992px) {
-  .article-text {
-    width: 100%;
-    height: 400px;
-    padding: 150px 2px 150px 2px; } }

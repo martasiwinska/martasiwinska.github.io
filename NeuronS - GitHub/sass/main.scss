@@ -65,7 +65,7 @@ body {
 }
 
 
-// nav1
+
 
 .margin-top-style {
     margin-top: 4px;
@@ -81,7 +81,7 @@ body {
 }
 .main-nav1 {
     background-color:$primary-dark-color;
-    height: 50px;
+    // height: 50px;
 
     .nav-link-style {
         i {
@@ -106,7 +106,7 @@ body {
     background-color: $secondary-dark-color;
 
 }
-// nav2
+nav2
 
 .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 1.25rem !important;
@@ -299,13 +299,13 @@ div#copyright {
     }
 };
 
-// @media all and (max-width: 992px) {
+@media all and (max-width: 992px) {
 
-//     .to-hide {
-//         visibility: hidden;
-//     }
+    .to-hide {
+        display: none;
+    }
 
-// }
+}
 
 // @media all and (max-width: 992px) {
 

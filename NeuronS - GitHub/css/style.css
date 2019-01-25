@@ -34,8 +34,7 @@ body {
     font-size: 13px; }
 
 .main-nav1 {
-  background-color: #0e0e0e;
-  height: 50px; }
+  background-color: #0e0e0e; }
   .main-nav1 .nav-link-style i {
     margin: 15px;
     font-size: 13px; }
@@ -53,13 +52,15 @@ body {
 .dropdown-menu li:hover {
   background-color: #151515; }
 
+nav2
 .navbar-expand-sm .navbar-nav .nav-link {
   padding-right: 1.25rem !important;
   padding-left: 1.25rem !important;
   padding-bottom: 1rem;
   color: #dedede;
   border-bottom: solid 2px #151515; }
-  .navbar-expand-sm .navbar-nav .nav-link:hover {
+  nav2
+.navbar-expand-sm .navbar-nav .nav-link:hover {
     border-bottom: solid 2px #2a80f8; }
 
 img#logo-main-nav {
@@ -170,3 +171,7 @@ div#copyright {
   #scroll-button i {
     color: #2a80f8;
     font-size: 12px; }
+
+@media all and (max-width: 992px) {
+  .to-hide {
+    display: none; } }

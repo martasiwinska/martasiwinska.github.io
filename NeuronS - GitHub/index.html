@@ -15,10 +15,17 @@
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
         <!-- Animate -->
         <link rel="stylesheet" href="css/animate.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="vendor/fontawesome-free-5.6.3-web/css/all.css">
         <!-- Main style -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/protean.css">
     </head>
     <body>
+        <!-- Content will be set with JS -->
+        <div id="search-results-container" class="animated">
+        </div>
+
         <nav class="navbar navbar-expand-lg navbar-dark main-nav1">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -200,13 +207,77 @@
             </div>
         </div>
 
+
+        <script src="vendor/mustache.js-3.0.1/mustache.js"></script>
+
+        <script id="search-results-template" type="x-tmpl-mustache">
+            <div id="search-results">
+                {{#entries}}
+                    <div class="entry">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4>{{ title }}</h4>
+                                <h5>{{ subtitle }}</h5>
+                            </div>
+                            <div class="col-4">
+                                <img src="{{ image }}" class="img-fluid" alt="{{ image_title }}">
+                            </div>
+                        </div>
+                    </div>
+                {{/entries}}
+            </div>
+        </script>
+
+
+
         <script src="vendor/jquery-3.3.1/jquery-3.3.1.js"></script>
         <script src="vendor/popper.js-1.14.6/umd/popper.js"></script>
         <script src="vendor/bootstrap-4.2.1/js/bootstrap.bundle.js"></script>
-        <script src="vendor/mustache.js-3.0.1/mustache.js"></script>
 
         <script src="js/magicArrow.jquery.js"></script>
         <script src="js/magicSearch.jquery.js"></script>
         <script src="main.js"></script>
+
+        <script>
+            setTimeout(function() {
+                var $template = $('#search-results-template');
+                var html = Mustache.render($template.html(), {
+                    entries: [
+                        {
+                            title:          "Machine Head",
+                            subtitle:       "Locust",
+                            image:          "img/example_icon.PNG",
+                            image_title:    "Machine Head - Unto The Locust"
+                        },
+                        {
+                            title:          "Godsmack",
+                            subtitle:       "1000 HP",
+                            image:          "img/example_icon2.PNG",
+                            image_title:    "Godsmack - 1000 HP"
+                        },
+                        {
+                            title:          "Amaranthe",
+                            subtitle:       "Digital World",
+                            image:          "img/example_icon3.PNG",
+                            image_title:    "Amaranthe - Massive Addictive"
+                        },
+                        {
+                            title:          "Motörhead",
+                            subtitle:       "Love me like a reptile",
+                            image:          "img/example_icon4.PNG",
+                            image_title:    "Motörhead - Ace of Spades"
+                        }
+                    ]
+                });
+                $('#search-results-container').html(html);
+                $('#search-results-container').addClass("fadeInRight");
+
+                $('#search-results-container').on('scroll', function(e) {
+                    if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
+
+                    }
+                });
+            }, 1000);
+        </script>
     </body>
 </html>

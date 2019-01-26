@@ -20,62 +20,79 @@
         <!-- Main style -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/protean.css">
+
     </head>
     <body>
-        <!-- Content will be set with JS -->
-        <div id="search-results-container" class="animated">
-        </div>
+    <div id="search-results-container" class="animated"></div>
+    <nav class="navbar navbar-expand-lg justify-content-center navbar-dark main-nav1">
+            <ul class="nav navbar-nav to-hide">
+                <li>
+                    <a class="nav-link" href="#"><i class="icon-rss"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"><i class="icon-facebook"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"><i class="icon-twitter"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"><i class="icon-instagram"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"><i class="icon-youtube-play"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#"><i class="icon-linkedin-squared"></i></a>
+                </li>
+            </ul>
 
-        <nav class="navbar navbar-expand-lg navbar-dark main-nav1">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="col-md-2 navbar-nav justify-content-start to-hide">
-                    <li>
-                        <a class="nav-link px-2" href="#"><i class="icon-rss"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2" href="#"><i class="icon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2" href="#"><i class="icon-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2" href="#"><i class="icon-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2" href="#"><i class="icon-youtube-play"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link px-2" href="#"><i class="icon-linkedin-squared"></i></a>
-                    </li>
-                </ul>
-                <ul class="col-md-8 navbar-nav justify-content-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav ml-auto w-80 justify-content-center">
+
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link" href="#">Sklep<i class="icon-basket"></i></a>
+                        <a class="nav-link margin-top-style" href="#">Sklep<i class="icon-basket to-hide"></i></a>
                     </li>
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link" href="#">Pobierz<i class="icon-download"></i></a>
+                        <a class="nav-link margin-top-style" href="#">Pobierz<i class="icon-download to-hide"></i></a>
+                    </li>
+                    <li class="nav-item logo-main-nav-container to-hide">                
+                        <a class="nav-link" href="#"><img src="img/logo-biale.png" id="logo-main-nav"></a>
                     </li>
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link" href="#">Wydarzenia<i class="icon-calendar"></i></a>
+                        <a class="nav-link margin-top-style" href="#">Wydarzenia<i class="icon-calendar to-hide"></i></a>
                     </li>
                     <li class="nav-item nav-link-style">
                         <a class="nav-link" href="#" id="magicSearch">Szukaj
                             <i class="icon-search"></i>
                         </a>
+                        <!--
+                        <a class="nav-link margin-top-style" href="#">Szukaj<i class="icon-search to-hide"></i></a>
+                        -->
                     </li>
-                </ul>
-                <ul class="col-md-2 navbar-nav justify-content-end" id="right-itemlist">
+    
+
+            </ul>
+                <ul class="nav navbar-nav ml-auto justify-content-end" id="right-itemlist">
                     <li class="nav-item hide-when-search">
                         <a class="nav-link" href="#">O projekcie</a>
                     </li>
                     <li class="nav-item hide-when-search">
-                        <a class="nav-link" href="#">PL</a>
+                        <a class="nav-link" href="#">Kontakt</a>
                     </li>
                     <li class="nav-item hide-when-search">
-                        <a class="nav-link" href="#">Zaloguj</a>
+                            <a class="nav-link" href="#">Zaloguj</a>
+                    </li>
+                    <li class="nav-item dropdown hide-when-search">
+                        <a class="nav-link" data-toggle="dropdown" href="">PL<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="languageSubmenu">
+                            <li><a class="nav-link" href="#">EN</a></li>
+                            <li><a class="nav-link" href="#">ZH</a></li>
+                            <li><a class="nav-link" href="#">FR</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item" style="position:absolute; right: 10px; top: 10px; z-index: 10000;">
                         <input type="text" name="search" class="search-input d-none" style="border: none;">
@@ -84,37 +101,38 @@
             </div>
         </nav>
 
-        <nav class="nav2">
-            <div class="container nav2-container-style">
-                <div class="row nav2-row-style">
-                    <div class="col-lg-2 col-sm-6 border-style">
-                        <a href="#">NeuroN Foundation</a>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 border-style">
-                        <a href="#">New Neuropsychiatry</a>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 border-style">
-                        <a href="#">Oakes Innovate</a>
-                    </div>
-                    <div class="col-lg-2 col-sm-6 border-style">
-                        <a href="#">Hippocampus Festival</a>
-                    </div>
-                    <div class="col-lg-2 col-sm-12 border-style">
-                        <a href="#">Neauron Forum</a>
-                    </div>
-                    <div class="col-lg-1 col-sm-6 border-style">
-                        <a href="#">O nas</a>
-                    </div>
-                    <div class="col-lg-1 col-sm-6 border-style">
-                        <a href="#">Kontakt</a>
-                    </div>
-                </div>
-            </div>
+        <nav class="navbar navbar-expand-sm navbar-dark justify-content-center" id="nav2">                 
+            <ul class="navbar-nav text-center">
+                <li class="nav-item border-style">
+                    <a class="nav-link" href="#">NeuroN Foundation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">New Neuropsychiatry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NeuroN Direction</a>
+                </li>    
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oakes Innovate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NTV Channel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oakes Clinic</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oak Atlantis</a>
+                </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#">O nas</a>
+                </li>  
+            </ul>
         </nav>
 
         <header id="main-header">
             <div class="header-caption">
-                <img src="img/logo.png">
+                <img src="img/logo-biale.png">
                 <div class="header-text-container">
                     <h1>NeuroN Foundation</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio praesentium magnam ipsum reprehenderit corporis architecto in atque, cupiditate asperiores error nesciunt.</p>
@@ -194,7 +212,7 @@
             </div>
 
             <div id="copyright" class="small text-center">
-                <p>Copyright &copy; 2018 NeuroN Foundation</p>
+                <p>Copyright &copy; 2018 Smart Oak Project</p>
             </div>
         </footer>
 
@@ -206,7 +224,6 @@
                 <i class="icon-down-open" id="scroll-down"></i>
             </div>
         </div>
-
 
         <script src="vendor/mustache.js-3.0.1/mustache.js"></script>
 
@@ -233,7 +250,6 @@
         <script src="vendor/jquery-3.3.1/jquery-3.3.1.js"></script>
         <script src="vendor/popper.js-1.14.6/umd/popper.js"></script>
         <script src="vendor/bootstrap-4.2.1/js/bootstrap.bundle.js"></script>
-
         <script src="js/magicArrow.jquery.js"></script>
         <script src="js/magicSearch.jquery.js"></script>
         <script src="main.js"></script>

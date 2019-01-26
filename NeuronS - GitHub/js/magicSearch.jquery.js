@@ -44,6 +44,10 @@
         hidden = false;
     };
 
+    var showResultsPanel = function() {
+
+    };
+
     var showSearchbar = function() {
         var $searchInput    = $(settings.searchInputSelector);
         $searchInput.removeClass("d-none");

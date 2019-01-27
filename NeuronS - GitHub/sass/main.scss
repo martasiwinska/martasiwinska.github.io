@@ -69,14 +69,13 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: $primary-light-color;
     
-    i{
+    i {
         font-size: 13px;
     }
 
 }
 .main-nav1 {
     background-color:$primary-dark-color;
-    // height: 50px;
 
     .nav-link-style {
         i {
@@ -103,7 +102,7 @@ body {
 }
 
 
-.navbar-expand-sm .navbar-nav .nav-link {
+.navbar-expand-sm .navbar-nav .nav2-link-style {
     padding-right: 1.25rem !important;
     padding-left: 1.25rem !important;
     padding-bottom: 1rem;
@@ -173,18 +172,19 @@ img#logo-main-nav {
 
     .header-caption {
         padding-left: 100px;
+        position: fixed;
     
         img {
             height: 130px;
-            margin: 50px 0 50px 0;
+            margin: 75px 0 20px 0;
         }
 
         .header-text-container {
-            width: 35%;
+            width: 50%;
 
             h1 {
                 font-size: 3.5em;
-                margin: 20px 0;
+                margin-bottom: 25px;
             }
         }
     }
@@ -253,18 +253,19 @@ footer {
 
         &:hover,
         &:focus {
-            color: $text-color;
-            text-decoration-color: $logo-light-color;
+            color: $logo-light-color;
+            text-decoration: none;
         }
     }
 
-    .footer-link-1 {
+    .navbar-light .navbar-nav .footer-link-1 {
         color: $text-color;
 
         &:hover,
         &:focus {
-            color: $text-color;
-            text-decoration-color: $logo-light-color;
+            color: $logo-light-color;
+            text-decoration: none;
+
         }
     }
 }
@@ -308,11 +309,29 @@ div#copyright {
 @media all and (max-width: 992px) {
 	.main-nav1 .nav-item {
         text-align: center;
-        // border-bottom: solid 2px $logo-light-color;
         }  
-		// padding: 8px 0;
-        // border-top: 1px solid rgba(119, 119, 119, 0.5);
+
+        #main-header .header-caption {
+            padding-left: 70px;
+            position: fixed;
         
+            img {
+                height: 100px;
+                margin: 50px 0 20px 0;
+            }
+    
+            .header-text-container {
+                width: 70%;
+    
+                h1 {
+                    font-size: 2.5em;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    
+    
+
         .section-container {
     
             .article-text {
@@ -326,13 +345,17 @@ div#copyright {
             }
 
             .img-container {
-                margin-top: 50px;
+                margin-top: 40px;
                 height: 250px;
             }
 
             img {
         width: 50vw;
         height: 50vw;
+            }
+
+            .section-img-right {
+                margin-left: 220px;
             }
 
         }

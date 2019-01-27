@@ -12,6 +12,10 @@ $('#magicSearch').magicSearch({
     hideableElementsSelector:   '.hide-when-search'
 });
 
+$(window).magicNav({
+    navSelector: '#nav2'
+});
+
 function onWindowScroll(e) {
     $("#main-header").toggleClass("animate", (window.pageYOffset > 40)&&(window.innerWidth > 620));
 }

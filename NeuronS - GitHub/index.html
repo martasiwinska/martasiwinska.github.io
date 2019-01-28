@@ -7,25 +7,19 @@
         <title>Nueron Foundation</title>
 
         <!-- Bootstrap -->
-        <link rel="stylesheet" href="vendor/bootstrap-4.2.1/css/bootstrap.css">
-
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <!-- Fontello -->
         <link rel="stylesheet" href="czcionki fontello/css/fontello.css">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-        <!-- Animate -->
-        <link rel="stylesheet" href="css/animate.css">
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="vendor/fontawesome-free-5.6.3-web/css/all.css">
         <!-- Main style -->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/protean.css">
-
+		
     </head>
     <body>
-        <div id="search-results-container" class="animated"></div>
-        <nav class="navbar navbar-expand-lg justify-content-center navbar-dark main-nav1">
-            <ul class="nav navbar-nav to-hide">
+        <nav class="navbar navbar-expand-lg navbar-dark main-nav1">
+            <ul class="navbar-nav to-hide">
                 <li>
                     <a class="nav-link" href="#"><i class="icon-rss"></i></a>
                 </li>
@@ -46,99 +40,75 @@
                 </li>
             </ul>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="nav navbar-nav ml-auto w-80 justify-content-center">
-
+            <div class="collapse navbar-collapse nav-center-block" id="navbarText">
+                <ul class="navbar-nav ml-auto w-80 justify-content-center">
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link margin-top-style" href="#">Sklep<i class="icon-basket to-hide"></i></a>
+                        <a class="nav-link" href="#">Sklep<i class="icon-basket"></i></a>
                     </li>
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link margin-top-style" href="#">Pobierz<i class="icon-download to-hide"></i></a>
-                    </li>
-                    <li class="nav-item logo-main-nav-container to-hide">
-                        <a class="nav-link" href="#"><img src="img/logo-biale.png" id="logo-main-nav"></a>
+                        <a class="nav-link" href="#">Pobierz<i class="icon-download"></i></a>
                     </li>
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link margin-top-style" href="#">Wydarzenia<i class="icon-calendar to-hide"></i></a>
+                        <a class="nav-link" href="#">Wydarzenia<i class="icon-calendar"></i></a>
                     </li>
                     <li class="nav-item nav-link-style">
-                        <a class="nav-link margin-top-style" href="#" id="magicSearch">
+                        <a class="nav-link" href="#">
                             Szukaj
                             <i class="icon-search"></i>
+                            <input type="text" name="search" class="search-input">
                         </a>
                     </li>
-
-
                 </ul>
-                <ul class="nav navbar-nav ml-auto justify-content-end" id="right-itemlist">
-                    <li class="nav-item hide-when-search">
+                <ul class="navbar-nav ml-auto justify-content-end">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">O projekcie</a>
                     </li>
-                    <li class="nav-item hide-when-search">
-                        <a class="nav-link" href="#">Kontakt</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PL</a>
                     </li>
-                    <li class="nav-item hide-when-search">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Zaloguj</a>
-                    </li>
-                    <li class="nav-item dropdown hide-when-search">
-                        <a class="nav-link" data-toggle="dropdown" href="">PL<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="languageSubmenu">
-                            <li><a class="nav-link" href="#">EN</a></li>
-                            <li><a class="nav-link" href="#">DE</a></li>
-                            <li><a class="nav-link" href="#">FR</a></li>
-                            <li><a class="nav-link" href="#">ES</a></li>
-                            <li><a class="nav-link" href="#">IT</a></li>
-                            <li><a class="nav-link" href="#">RU</a></li>
-                            <li><a class="nav-link" href="#">AR</a></li>
-                            <li><a class="nav-link" href="#">ZH</a></li>
-                            <li><a class="nav-link" href="#">JA</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" style="position:absolute; right: 10px; top: 10px; z-index: 10000;">
-                        <input type="text" name="search" class="search-input d-none" style="border: none;">
                     </li>
                 </ul>
             </div>
         </nav>
-
-        <nav class="navbar navbar-expand-sm navbar-dark justify-content-center fixed-top" id="nav2">
-            <ul class="navbar-nav text-center">
-                <li class="nav-item border-style">
-                    <a class="nav-link nav2-link-style" href="#">NeuroN Foundation</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">New Neuropsychiatry</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">NeuroN Direction</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">Oakes Innovate</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">NTV Channel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">Oakes Clinic</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">Oak Atlantis</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav2-link-style" href="#">O nas</a>
-                </li>
-            </ul>
+        <nav class="nav2">
+            <div class="container nav2-container-style">
+                <div class="row nav2-row-style">
+                    <div class="col-lg-2 col-sm-6 border-style">
+                        <a href="#">NeuroN Foundation</a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 border-style">
+                        <a href="#">New Neuropsychiatry</a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 border-style">
+                        <a href="#">Oakes Innovate</a>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 border-style">
+                        <a href="#">Hippocampus Festival</a>
+                    </div>
+                    <div class="col-lg-2 col-sm-12 border-style">
+                        <a href="#">Neauron Forum</a>
+                    </div>
+                    <div class="col-lg-1 col-sm-6 border-style">
+                        <a href="#">O nas</a>
+                    </div>
+                    <div class="col-lg-1 col-sm-6 border-style">
+                        <a href="#">Kontakt</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <header id="main-header">
             <div class="header-caption">
-                <img src="img/logo-biale.png">
+                <img src="img/logo.png">
                 <div class="header-text-container">
-                    <h1>NeuroN Foundation</h1>
+                    <h1>NeuroN Foudation</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio praesentium magnam ipsum reprehenderit corporis architecto in atque, cupiditate asperiores error nesciunt.</p>
                 </div>
             </div>
@@ -147,7 +117,7 @@
         <section>
             <div class="section-container">
                 <div class="row section-row-style">
-                    <div class="col-lg-4 col-md-12 col-sm-12 img-container">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <img src="img/article1.jpg" class="section-img-style section-img-left animate-left">
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 article-text d-md-block">
@@ -158,14 +128,14 @@
                 <div class="row section-row-style">
                     <div class="col-lg-8 col-md-12 col-sm-12 article-text d-md-block">
                         <h4>New Neuropsychiatry</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat eveniet placeat animi, ipsam amet mollitia? Eum dicta voluptate a, repudiandae eligendi quod quibusdam blanditiis fugit omnis placeat. Commodi dolore, voluptatem neque, quia, aspernatur incidunt earum laborum laudantium alias esse velit ipsum sed quidem perspiciatis est molestias cupiditate ipsa optio! In sequi, libero cum laudantium velit veniam quia aut, voluptatem totam vitae vel optio minus nisi excepturi, eius iure provident quibusdam deserunt modi. Illo facere laboriosam est earum similique minus</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore repellat eveniet placeat animi, ipsam amet mollitia? Eum dicta voluptate a, repudiandae eligendi quod quibusdam blanditiis fugit omnis placeat. Commodi dolore, voluptatem neque, quia, aspernatur incidunt earum laborum laudantium alias esse velit ipsum sed quidem perspiciatis est molestias cupiditate ipsa optio! In sequi, libero cum laudantium velit veniam quia aut, voluptatem totam vitae vel optio minus nisi excepturi, eius iure provident quibusdam deserunt modi. Illo facere laboriosam est earum similique minus!</p>
                     </div>
-                    <div class="col-lg-4 col-md-12 col-sm-12 img-container">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <img src="img/article2.jpg" class="section-img-style section-img-right animate-right">
                     </div>
                 </div>
                 <div class="row section-row-style">
-                    <div class="col-lg-4 col-md-12 col-sm-12 img-container">
+                    <div class="col-lg-4 col-md-12 col-sm-12">
                         <img src="img/article3.jpg" class="section-img-style section-img-left animate-left">
                     </div>
                     <div class="col-lg-8 col-md-12 col-sm-12 article-text d-md-block">
@@ -177,51 +147,51 @@
         </section>
         <!-- 5 okienek -->
         <section>
-            <div class="container-fluid">
-                <div class="card-deck" style="margin-left: 20px; margin-right:20px ">
-                    <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
-                        <div id="duze1" class="card-block">
-                            <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt1.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
-                            <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 1</h6></small>
-                            <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
-                        </div>
-                    </div>
-                    <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
-                        <div id="duze2" class="card-block ">
-                            <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt2.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
-                            <h6 class="card-title" style="text-align:center">Nazwa aktualności 2</h6></small>
-                            <p class="p-2" style="text-align: justify;">This is a longer card with supporting text bThis is a longer card with supporting text below as a natuelow as a natural lead-in to additional content. This content is a little bit</p>
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-                    <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
-                        <div id="duze3" class="card-block">
-                            <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt3.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
-                            <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 3</h6></small>
-                            <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-md-block p-3 d-lg-none p-3"><!-- wrap every 3 on md--></div>
-                    <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
-                        <div id="duze4" class="card-block">
-                            <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt4.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
-                            <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 4</h6></small>
-                            <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
-                        </div>
-                    </div>
-                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-                    <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
-                    <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
-                        <div id="duze5" class="card-block">
-                            <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt5.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
-                            <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 5</h6></small>
-                            <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natui a lo bit</p>
-                        </div>
+        <div class="container-fluid" >
+            <div class="card-deck" style="margin-left: 20px; margin-right:20px ">
+                <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
+                 <div id ="duze1" class="card-block">
+                        <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt1.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
+                        <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 1</h6></small>
+                        <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
+                 </div>     
+				</div>	
+                <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
+                    <div id ="duze2" class="card-block ">
+                        <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt2.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
+                        <h6 class="card-title" style="text-align:center">Nazwa aktualności 2</h6></small>
+                        <p class="p-2" style="text-align: justify;">This is a longer card with supporting text bThis is a longeas a natuelow as a natural lead-in to additional content. This content is a little bit</p>
                     </div>
                 </div>
+                <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
+                    <div id ="duze3" class="card-block">
+                        <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt3.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
+                        <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 3</h6></small>
+                        <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-md-block p-3 d-lg-none p-3"><!-- wrap every 3 on md--></div>
+                <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
+                    <div id ="duze4" class="card-block">
+                        <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt4.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
+                        <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 4</h6></small>
+                        <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+                <div class="w-100 d-none d-lg-block d-xl-none"><!-- wrap every 4 on lg--></div>
+                <div class="card mb-4" style="border-radius:25px;box-shadow: 0 0.5rem 1rem rgba(214, 197, 246, 0.50);">
+                    <div id ="duze5" class="card-block">
+                        <div class="powiekszenie" style="border:0px none; border-radius: 25px 25px 0px 0px;"><img src="img/projekt5.jpg" class="img-fluid" style="border-radius: 25px 25px 0px 0px; margin-bottom: 0.5rem"></div>
+                        <small><h6 class="card-title" style="text-align:center">Nazwa aktualności 5</h6></small>
+                        <p class="p-2" style="text-align: justify;">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit</p>
+                    </div>
+                </div
             </div>
+        </div>
         </section>
-        <!-- footer- -->
+
         <footer>
             <div class="text-center footer">
                 <nav class="navbar navbar-expand-sm navbar-light justify-content-center">
@@ -233,22 +203,19 @@
                             <a class="footer-link" href="#">New Neuropsychiatry</a>
                         </li>
                         <li class="nav-item">
-                            <a class="footer-link" href="#">NeuroN Direction</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="footer-link" href="#">Oakes Innovate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="footer-link" href="#">NTV Channel</a>
+                            <a class="footer-link" href="#">Hippocampus festival</a>
                         </li>
                         <li class="nav-item">
-                            <a class="footer-link" href="#">Oakes Clinic</a>
+                            <a class="footer-link" href="#">NeuroN Forum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="footer-link" href="#">Oak Atlantis</a>
+                            <a class="footer-link" href="#">NeuroN Forum</a>
                         </li>
                         <li class="nav-item">
-                            <a class="footer-link" href="#">O nas</a>
+                            <a class="footer-link" href="#">NeuroN Coin & Card</a>
                         </li>
                     </ul>
                 </nav>
@@ -265,7 +232,7 @@
             </div>
 
             <div id="copyright" class="small text-center">
-                <p>Copyright &copy; 2018 Smart Oak Project</p>
+                <p>Copyright &copy; 2018 NeuroN Foundation</p>
             </div>
         </footer>
 
@@ -277,79 +244,13 @@
                 <i class="icon-down-open" id="scroll-down"></i>
             </div>
         </div>
+		<script type="text/javascript" src="scripts/custom.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-        <script src="vendor/mustache.js-3.0.1/mustache.js"></script>
-
-        <script id="search-results-template" type="x-tmpl-mustache">
-            <div id="search-results">
-                {{#entries}}
-                <div class="entry">
-                    <div class="row">
-                        <div class="col-8">
-                            <h4>{{ title }}</h4>
-                            <h5>{{ subtitle }}</h5>
-                        </div>
-                        <div class="col-4">
-                            <img src="{{ image }}" class="img-fluid" alt="{{ image_title }}">
-                        </div>
-                    </div>
-                </div>
-                {{/entries}}
-            </div>
-        </script>
-
-
-
-        <script src="vendor/jquery-3.3.1/jquery-3.3.1.js"></script>
-        <script src="vendor/popper.js-1.14.6/umd/popper.js"></script>
-        <script src="vendor/bootstrap-4.2.1/js/bootstrap.bundle.js"></script>
-        <script src="js/magicArrow.jquery.js"></script>
-        <script src="js/magicSearch.jquery.js"></script>
-        <script src="js/magicNav.jquery.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <!-- jqery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js"></script>
-
-        <script>
-                        /*
-                        setTimeout(function() {
-                            var $template = $('#search-results-template');
-                            var html = Mustache.render($template.html(), {
-                                entries: [
-                                    {
-                                        title:          "Machine Head",
-                                        subtitle:       "Locust",
-                                        image:          "img/example_icon.PNG",
-                                        image_title:    "Machine Head - Unto The Locust"
-                                    },
-                                    {
-                                        title:          "Godsmack",
-                                        subtitle:       "1000 HP",
-                                        image:          "img/example_icon2.PNG",
-                                        image_title:    "Godsmack - 1000 HP"
-                                    },
-                                    {
-                                        title:          "Amaranthe",
-                                        subtitle:       "Digital World",
-                                        image:          "img/example_icon3.PNG",
-                                        image_title:    "Amaranthe - Massive Addictive"
-                                    },
-                                    {
-                                        title:          "Motörhead",
-                                        subtitle:       "Love me like a reptile",
-                                        image:          "img/example_icon4.PNG",
-                                        image_title:    "Motörhead - Ace of Spades"
-                                    }
-                                ]
-                            });
-                            $('#search-results-container').html(html);
-                            $('#search-results-container').addClass("fadeInRight");
-
-                            $('#search-results-container').on('scroll', function(e) {
-                                if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-
-                                }
-                            });
-                        }, 1000);
-                        */
-        </script>
     </body>
 </html>

@@ -123,11 +123,30 @@ img#logo-main-nav {
 
 
 .search-input {
-    background-color: $primary-light-color;
-    border-radius: 0.35rem;
+    background-image: linear-gradient(to right bottom,
+    rgba($secondary-dark-color, 1),
+    rgba($secondary-dark-color, 1)),
+    url(../img/LUPA.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.8rem;
     width: 100%;
-    height: 25px;
+    height: 25px; 
+    margin-top: 7px;
+    margin-right: 330px; 
+    border: 1px solid $secondary-dark-color;
+    color: $primary-light-color;
+    padding-left: 10px;
+
+    &:focus {
+        outline: none;
+    }
+    
 }
+
+
+
 #nav2 {
     background-color: $secondary-dark-color;
     padding-bottom: 0;
@@ -196,6 +215,7 @@ img#logo-main-nav {
     padding: 50px 0 50px 0;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 
     .img-container {
         margin-top: 50px;

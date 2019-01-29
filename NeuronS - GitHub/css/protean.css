@@ -34,15 +34,8 @@
 }
 
 #main-header {
-    shape-inside: polygon(0 0, 100% 0, 100% 50%, 25% 100%, 0 70%);
-    shape-padding: 20px;
     transition: all 1s ease;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 25% 100%, 0 70%);
-}
-
-#main-header.animate {
-    shape-inside: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%, 0 100%);
 }
 
 #nav2 {

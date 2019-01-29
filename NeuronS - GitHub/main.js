@@ -16,10 +16,9 @@ $(window).magicNav({
     navSelector: '#nav2'
 });
 
-function onWindowScroll(e) {
-    $("#main-header").toggleClass("animate", (window.pageYOffset > 40)&&(window.innerWidth > 620));
-}
-$(window).scroll(onWindowScroll);
+$(document).magicLine({
+    elementSelector:    '#main-header',
+});
 
 $(window).scroll(function(){
     if ($(this).scrollTop() + document.documentElement.clientHeight > 1000) {

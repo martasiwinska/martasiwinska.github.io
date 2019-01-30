@@ -232,3 +232,36 @@ p {
     text-align: justify;
 	
 }
+.powiekszenie{
+    overflow: hidden;
+    padding: 0;
+    
+    border:0px solid #000;
+}
+.powiekszenie img {
+    transition-duration: 1s;
+    margin: 0 auto;
+    display: block;
+	
+}
+.powiekszenie img:hover {
+    filter: brightness(60%);
+	
+	transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform:  (1.2);
+    z-index: 0;
+	
+}
+.
+
+
+div#duze1 {
+position: relative;
+}
+h5#kr {
+opacity: 1;	
+position: absolute;
+top: 10px;
+left: 10px;
+}

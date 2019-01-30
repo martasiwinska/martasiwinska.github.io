@@ -76,6 +76,7 @@ body {
 }
 .main-nav1 {
     background-color:$primary-dark-color;
+    overflow-y: hidden;
 
     .nav-link-style {
         i {

@@ -55,10 +55,20 @@ img#logo-main-nav {
   margin-top: 0; }
 
 .search-input {
-  background-color: #dadada;
-  border-radius: 0.35rem;
+  background-image: linear-gradient(to right bottom, #151515, #151515), url(../img/LUPA.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
   width: 100%;
-  height: 25px; }
+  height: 25px;
+  margin-top: 7px;
+  padding-right: 330px;
+  border: 1px solid #151515;
+  color: #dadada;
+  padding-left: 10px; }
+  .search-input:focus {
+    outline: none; }
 
 #nav2 {
   background-color: #151515;
@@ -99,7 +109,8 @@ img#logo-main-nav {
 .section-container {
   padding: 50px 0 50px 0;
   width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
   .section-container .img-container {
     margin-top: 50px;
     height: 400px; }

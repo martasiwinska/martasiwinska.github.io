@@ -20,7 +20,6 @@ $(document).magicLine({
     elementSelector:    '#main-header',
 });
 
-
 function onScroll(e) {
     var scrollTop       = $(this).scrollTop();
     var clientHeight    = document.documentElement.clientHeight;

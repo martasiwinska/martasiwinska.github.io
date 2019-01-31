@@ -1,0 +1,6 @@
+projectKey=neuron
+serverUrl=https://sonar.protean.pl
+serverVersion=7.6.0.21501
+dashboardUrl=https://sonar.protean.pl/dashboard?id=neuron
+ceTaskId=AWihZLzpY-kRJp695bda
+ceTaskUrl=https://sonar.protean.pl/api/ce/task?id=AWihZLzpY-kRJp695bda

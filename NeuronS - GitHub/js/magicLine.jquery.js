@@ -40,6 +40,11 @@
                 };
             }
         }
+
+        return {
+            key:    '-webkit-clip-path',
+            value:  'polygon(' + value + ')'
+        };
     };
 
     var onScroll = function(e) {

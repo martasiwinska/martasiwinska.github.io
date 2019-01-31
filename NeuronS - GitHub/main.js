@@ -20,41 +20,34 @@ $(document).magicLine({
     elementSelector:    '#main-header',
 });
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() + document.documentElement.clientHeight > 1000) {
-        $('#section-container-img-1').css("transform","rotate(25deg)");
-        $('#section-container-img-1').css("transition-duration","3s");
+
+function onScroll(e) {
+    var scrollTop       = $(this).scrollTop();
+    var clientHeight    = document.documentElement.clientHeight;
+    var totalHeight     = scrollTop + clientHeight;
+    var breakpoints     = [ 1000, 1300, 1600 ];
+
+    var rotate = {
+        seconds: 3,
+        right: 25,
+        left: 15
+    };
+
+    for(var image_ix = 1; image_ix <= breakpoints.length; image_ix++) {
+        var isEven              = (image_ix % 2 === 0);
+        var isImageOnLeftSide   = isEven;
+
+        var multiplier = (isImageOnLeftSide ? -1 : 1);
+
+        if (totalHeight > breakpoints[image_ix-1]) {
+            $('#section-container-img-' + image_ix).css("transform","rotate(" + (rotate.right * multiplier) + "deg)");
+            $('#section-container-img-' + image_ix).css("transition-duration", rotate.seconds + "s");
+        }
+        else  {
+            $('#section-container-img-' + image_ix).css("transform","rotate(" + (rotate.left * multiplier) + "deg)");
+            $('#section-container-img-' + image_ix).css("transition-duration",  rotate.seconds + "s");
+        }
     }
-    else  {
-        $('#section-container-img-1').css("transform","rotate(15deg)");
-        $('#section-container-img-1').css("transition-duration","3s");
-    }
-});
+}
 
-$(window).scroll(function(){
-    if ($(this).scrollTop() + document.documentElement.clientHeight > 1300) {
-        $('#section-container-img-2').css("transform","rotate(-25deg)");
-        $('#section-container-img-2').css("transition-duration","3s");
-    }
-    else  {
-        $('#section-container-img-2').css("transform","rotate(-15deg)");
-        $('#section-container-img-2').css("transition-duration","3s");
-    }
-});
-
-$(window).scroll(function(){
-    if ($(this).scrollTop() + + document.documentElement.clientHeight > 1600) {
-        $('#section-container-img-3').css("transform","rotate(25deg)");
-        $('#section-container-img-3').css("transition-duration","3s");
-    }
-    else  {
-        $('#section-container-img-3').css("transform","rotate(15deg)");
-        $('#section-container-img-3').css("transition-duration","3s");
-    }
-});
-
-
-
-
-
-
+$(window).scroll(onScroll);

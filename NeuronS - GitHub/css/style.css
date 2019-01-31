@@ -22,7 +22,8 @@ body {
     font-size: 13px; }
 
 .main-nav1 {
-  background-color: #0e0e0e; }
+  background-color: #0e0e0e;
+  overflow-y: hidden; }
   .main-nav1 .nav-link-style i {
     margin: 15px;
     font-size: 13px; }
@@ -39,6 +40,10 @@ body {
 
 .dropdown-menu li:hover {
   background-color: #151515; }
+
+.input-close-icon i {
+  font-size: 20px;
+  color: #dadada; }
 
 .navbar-expand-sm .navbar-nav .nav2-link-style {
   padding-right: 1.25rem !important;
@@ -60,10 +65,10 @@ img#logo-main-nav {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 0.8rem;
-  width: 100%;
+  width: 330px;
   height: 25px;
   margin-top: 7px;
-  padding-right: 330px;
+  margin-right: 330px;
   border: 1px solid #151515;
   color: #dadada;
   padding-left: 10px; }
@@ -213,64 +218,3 @@ div#copyright {
     text-align: center;
     padding: 8px 0;
     border-top: 1px solid rgba(119, 119, 119, 0.5); } }
-.card-title {
-    margin-bottom: .01rem;
-}
-
-p {
-    margin-top: 0px;
-    margin-bottom: 0rem;
-}
-
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 0rem;
-}
-
-.card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    text-align: justify;
-	
-}
-.powiekszenie{
-    overflow: hidden;
-    padding: 0;
-    
-    border:0px solid #000;
-}
-.powiekszenie img {
-    transition-duration: 1s;
-    margin: 0 auto;
-    display: block;
-	
-}
-.powiekszenie img:hover {
-    filter: brightness(60%);
-	
-	transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform:  (1.2);
-    z-index: 0;
-	
-}
-
-div#duze1 {
-position: relative;
-}
-h5#kr {
-opacity: 1;	
-position: absolute;
-top: 10px;
-left: 10px;
-}

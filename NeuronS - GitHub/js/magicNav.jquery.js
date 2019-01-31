@@ -1,31 +1,28 @@
-(function ($) {
+(function($) {
     var previousScrollTop = $(window).scrollTop();
 
-    var onScrollAtTop = function(e) {
-        $(settings.nav).css("margin-top", "50px");
-    };
-
     var onScrollDown = function(e) {
-        $(settings.nav).css("margin-top", "0px");
-        $(settings.nav).removeClass("animated fadeIn");
-        $(settings.nav).addClass("animated fadeOut");
+        if ($(settings.nav).offset().top > 110) {
+            $(settings.nav).removeClass('animated slideInDown');
+            $(settings.nav).addClass('animated slideOutUp');
+        }
     };
 
-    var onScrollUp  = function(e) {
-        $(settings.nav).css("margin-top", "0px");
-        $(settings.nav).removeClass("animated fadeOut");
-        $(settings.nav).addClass("animated fadeIn");
+    var onScrollUp = function(e) {
+        $(settings.nav).removeClass('animated slideOutUp');
+        $(settings.nav).addClass('animated slideInDown');
     };
 
     var onScroll = function(e) {
         var currentScrollTop = $(this).scrollTop();
 
-        if(currentScrollTop === 0) {
-            onScrollAtTop(e);
-            return;
+        if (currentScrollTop <= 75) {
+            $(settings.nav).css('animation-duration', '0s');
+        } else {
+            $(settings.nav).css('animation-duration', '1s');
         }
 
-        if(previousScrollTop > currentScrollTop) {
+        if (previousScrollTop > currentScrollTop) {
             onScrollUp(e);
         } else {
             onScrollDown(e);
@@ -39,8 +36,8 @@
     };
 
     var validate = function(config) {
-        if(config.navSelector === null) {
-            throw "navSelector cannot be null";
+        if (config.navSelector === null) {
+            throw 'navSelector cannot be null';
         }
     };
 
@@ -54,4 +51,4 @@
 
         $(this).scroll(onScroll);
     };
-}(jQuery));
+})(jQuery);

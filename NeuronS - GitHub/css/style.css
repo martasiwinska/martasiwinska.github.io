@@ -55,20 +55,10 @@ img#logo-main-nav {
   margin-top: 0; }
 
 .search-input {
-  background-image: linear-gradient(to right bottom, #151515, #151515), url(../img/LUPA.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 0.8rem;
+  background-color: #dadada;
+  border-radius: 0.35rem;
   width: 100%;
-  height: 25px;
-  margin-top: 7px;
-  padding-right: 330px;
-  border: 1px solid #151515;
-  color: #dadada;
-  padding-left: 10px; }
-  .search-input:focus {
-    outline: none; }
+  height: 25px; }
 
 #nav2 {
   background-color: #151515;
@@ -109,8 +99,7 @@ img#logo-main-nav {
 .section-container {
   padding: 50px 0 50px 0;
   width: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden; }
+  overflow-x: hidden; }
   .section-container .img-container {
     margin-top: 50px;
     height: 400px; }
@@ -264,6 +253,8 @@ p {
     z-index: 0;
 	
 }
+.
+
 
 div#duze1 {
 position: relative;

@@ -17,9 +17,14 @@ $(window).magicNav({
 });
 
 $(document).magicLine({
-    elementSelector:    '#main-header',
+    elementSelector:    '#main-header'
 });
 
+$('#section-container-img-1').magicRotator({
+    scrollDirection: 'right'
+});
+
+/*
 function onScroll(e) {
     var scrollTop       = $(this).scrollTop();
     var clientHeight    = document.documentElement.clientHeight;
@@ -50,3 +55,4 @@ function onScroll(e) {
 }
 
 $(window).scroll(onScroll);
+*/
